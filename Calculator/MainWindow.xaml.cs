@@ -20,85 +20,76 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        bool multiply, divide, minus, plus;
+        int currentValue = -1;
+        int newText = 0;
+
         public MainWindow()
         {
             InitializeComponent();
-            Console.WriteLine("Welcome to the C# Station Tutorial!");
         }
 
-        private void clickOne(object sender, RoutedEventArgs e)
+        private void clickNumber(object sender, RoutedEventArgs e)
         {
-            textBlock.Text = textBlock.Text + 1;
-        }
+            if (currentValue == -1)
+                currentValue = 0;
 
-        private void clickTwo(object sender, RoutedEventArgs e)
-        {
+            Button curButton = sender as Button;
+            
+            newText = Int32.Parse(curButton.Content as string);
 
-        }
+            int tempValue = (multiply ? (currentValue * newText) :
+                        (divide ? (currentValue / newText) :
+                        (plus ? (currentValue + newText) :
+                        (minus ? (currentValue - newText) : newText))));
 
-        private void clickThree(object sender, RoutedEventArgs e)
-        {
+            multiply = false;
+            divide = false;
+            minus = false;
+            plus = false;
 
-        }
+            textBlock.Text = tempValue.ToString();
 
-        private void clickFour(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickFive(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickSix(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickSeven(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickEight(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickThree(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void clickZero(object sender, RoutedEventArgs e)
-        {
-
+            currentValue = Int32.Parse(textBlock.Text);
         }
 
         private void clickMultiply(object sender, RoutedEventArgs e)
         {
-
+            multiply = true;
+            divide = false;
+            minus = false;
+            plus = false;
         }
 
         private void clickDivide(object sender, RoutedEventArgs e)
         {
-
+            multiply = false;
+            divide = true;
+            minus = false;
+            plus = false;
         }
 
         private void clickPlus(object sender, RoutedEventArgs e)
         {
-
+            multiply = false;
+            divide = false;
+            minus = false;
+            plus = true;
         }
 
-        private void clickDivide(object sender, RoutedEventArgs e)
+        private void clickMinus(object sender, RoutedEventArgs e)
         {
-
+            multiply = false;
+            divide = false;
+            minus = true;
+            plus = false;
         }
 
         private void clickClear(object sender, RoutedEventArgs e)
         {
-            textBlock.Text = null;
+            textBlock.Text = "0";
+            currentValue = -1;
+            newText = 0;
         }
     }
 }

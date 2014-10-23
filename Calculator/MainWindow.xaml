@@ -9,19 +9,19 @@
             <ColumnDefinition Width="0*"/>
         </Grid.ColumnDefinitions>
         <TextBlock Name="textBlock" Grid.ColumnSpan="2" Margin="0,0,0,315" FontSize="42" TextAlignment="Center" Text="1337"/>
-        <Button Grid.ColumnSpan="2" Margin="2,65,218,239" Width="70" Height="70" Content="1" FontSize="48" Click="clickOne" />
-        <Button Grid.ColumnSpan="2" Margin="74,65,146,239" Width="70" Height="70" Content="2" FontSize="48" Click="clickTwo" />
-        <Button Grid.ColumnSpan="2" Margin="146,65,74,239" Width="70" Height="70" Content="3" FontSize="48" Click="clickThree" />
+        <Button Grid.ColumnSpan="2" Margin="2,65,218,239" Width="70" Height="70" Content="1" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="74,65,146,239" Width="70" Height="70" Content="2" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="146,65,74,239" Width="70" Height="70" Content="3" FontSize="48" Click="clickNumber" />
         <Button Grid.ColumnSpan="2" Margin="218,65,2,239" Width="70" Height="70" FontSize="48" Content="*" Click="clickMultiply" />
-        <Button Grid.ColumnSpan="2" Margin="2,137,218,167" Width="70" Height="70" Content="4" FontSize="48" Click="clickFour" />
-        <Button Grid.ColumnSpan="2" Margin="74,137,146,167" Width="70" Height="70" Content="5" FontSize="48" Click="clickFive" />
-        <Button Grid.ColumnSpan="2" Margin="146,137,74,167" Width="70" Height="70" Content="6" FontSize="48" Click="clickSix" />
+        <Button Grid.ColumnSpan="2" Margin="2,137,218,167" Width="70" Height="70" Content="4" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="74,137,146,167" Width="70" Height="70" Content="5" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="146,137,74,167" Width="70" Height="70" Content="6" FontSize="48" Click="clickNumber" />
         <Button Grid.ColumnSpan="2" Margin="218,137,2,167" Width="70" Height="70" FontSize="48" Content="/" Click="clickDivide" />
-        <Button Grid.ColumnSpan="2" Margin="2,209,218,95" Width="70" Height="70" Content="7" FontSize="48" Click="clickSeven" />
-        <Button Grid.ColumnSpan="2" Margin="74,209,146,95" Width="70" Height="70" Content="8" FontSize="48" Click="clickEight" />
-        <Button Grid.ColumnSpan="2" Margin="146,209,74,95" Width="70" Height="70" Content="9" FontSize="48" Click="clickNine" />
+        <Button Grid.ColumnSpan="2" Margin="2,209,218,95" Width="70" Height="70" Content="7" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="74,209,146,95" Width="70" Height="70" Content="8" FontSize="48" Click="clickNumber" />
+        <Button Grid.ColumnSpan="2" Margin="146,209,74,95" Width="70" Height="70" Content="9" FontSize="48" Click="clickNumber" />
         <Button Grid.ColumnSpan="2" Margin="218,209,2,95" Width="70" Height="70" FontSize="48" Content="+" Click="clickPlus" />
-        <Button Grid.ColumnSpan="2" Margin="2,282,146,24" Height="70" Content="0" FontSize="48" Click="clickZero" />
+        <Button Grid.ColumnSpan="2" Margin="2,282,146,24" Height="70" Content="0" FontSize="48" Click="clickNumber" />
         <Button Grid.ColumnSpan="2" Margin="146,281,74,23" Width="70" Height="70" Content="C" FontSize="48" Click="clickClear" />
         <Button Grid.ColumnSpan="2" Margin="218,281,2,23" Width="70" Height="70" FontSize="48" Content="-" Click="clickMinus" />
     </Grid>
