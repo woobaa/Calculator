@@ -43,10 +43,7 @@ namespace WpfApplication1
                         (plus ? (currentValue + newText) :
                         (minus ? (currentValue - newText) : newText))));
 
-            multiply = false;
-            divide = false;
-            minus = false;
-            plus = false;
+            multiply = divide = minus = plus = false;
 
             textBlock.Text = tempValue.ToString();
 
@@ -56,33 +53,25 @@ namespace WpfApplication1
         private void clickMultiply(object sender, RoutedEventArgs e)
         {
             multiply = true;
-            divide = false;
-            minus = false;
-            plus = false;
+            divide = minus = plus = false;
         }
 
         private void clickDivide(object sender, RoutedEventArgs e)
         {
-            multiply = false;
             divide = true;
-            minus = false;
-            plus = false;
+            multiply = minus = plus = false;
         }
 
         private void clickPlus(object sender, RoutedEventArgs e)
         {
-            multiply = false;
-            divide = false;
-            minus = false;
             plus = true;
+            multiply = divide = minus = false;
         }
 
         private void clickMinus(object sender, RoutedEventArgs e)
         {
-            multiply = false;
-            divide = false;
             minus = true;
-            plus = false;
+            multiply = divide = plus = false;
         }
 
         private void clickClear(object sender, RoutedEventArgs e)
